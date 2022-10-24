@@ -1,0 +1,15 @@
+
+    <%= form_with(model: @blog, local: true, url: choose_new_or_edit ) do |form| %>
+  
+    <div class="blog_content">
+      <%= form.label :名前 %>
+      <%= form.text_field :name %>
+      <%= form.label :コメント %>
+      <%= form.text_field :content %>
+    </div>
+    <%= form.submit %>
+  <% end %>
+  
+  <%= link_to "一覧画面にもどる", blogs_path %>
+  
+  
